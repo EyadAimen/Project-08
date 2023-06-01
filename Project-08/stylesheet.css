@@ -1,0 +1,357 @@
+/* Just for making going to a fragment is smooth */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* importing the font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.1250em;
+    color: hsl(257, 7%, 63%);
+}
+h1,h2,h3{
+    
+    color: hsl(255, 11%, 22%);
+    font-weight: 700;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 4.5em;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    font-weight: 700;
+    color: hsl(257, 7%, 63%);
+}
+button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: white;
+    border: none;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 50px;
+    transition: 300ms ease-in;
+}
+button:hover{
+    background-color: hsl(180, 100%, 60%);
+}
+/* The header part */
+header{
+    font-size: .9rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+}
+.nav_links{
+    display: flex;
+}
+header ul{
+    display: flex;
+}
+header li{
+    margin-right: 10%;
+}
+header img{
+    height: 33px;
+    width: 121px;
+    margin-top: 10px;
+}
+header button{
+    width: 7vw;
+    padding: 10px 4%;
+    margin-top: -5px;
+    margin-left: 5%;
+}
+header a:hover{
+    color: hsl(257, 27%, 26%);
+}
+/* The main part */
+.main{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    margin-right: 0%;
+    padding-bottom: 120px;
+}
+.main img{
+    height: 70vh;
+    width: 70vw;
+}
+
+.main p{
+    margin-left: 0%;
+    margin-top: -50px;
+    margin-bottom: 25px;
+}
+.main button{
+    width: 12vw;
+    padding: 3% 4%;
+}
+
+/* The URL part */
+.form{
+    position: relative;
+    background-color: hsl(257, 27%, 26%);
+    background-image: url(bg-shorten-desktop.svg);
+    /* text-align: center; */
+    padding: 2% 4% 1% 4%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+}
+#url{
+    font-size: 18px;
+    width: 55vw;
+    /* height: 5vh; */
+    padding: 2% 1%;
+    border-radius: 10px;
+    border: none;
+}
+#url::placeholder{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding-left: 20px;
+    color: hsl(257, 7%, 63%);
+}
+#url:focus{
+    outline: none;
+    /* padding-left: 20px; */
+}
+#url:focus::placeholder{
+    color: transparent;
+}
+#submit{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    background-color: hsl(180, 66%, 49%);
+    width: 10vw;
+    padding: 2% 1%;
+    margin-left: 2%;
+    border-radius: 10px;
+    border: none;
+    transition: 300ms ease-in;
+
+}
+#submit:hover{
+    background-color: hsl(180, 100%, 60%);
+
+    
+}
+#error_message{
+    margin-left: 1%;
+    font-size: 14px;
+    color: hsl(0, 87%, 67%);
+}
+/* The cards part */
+.top{
+    background-color: whitesmoke;
+    text-align: center;
+    margin-top: -3.5%;
+    padding: 10% 10% 5% 10%;
+}
+.top h2{
+    font-size: 2.5rem;
+}
+.cards{
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 0% 10% 10% 10%;
+    background-color: whitesmoke;
+
+}
+hr{
+    /* position: absolute; */
+    margin-top: -320px;
+    border-top: 7.5px solid hsl(180, 66%, 49%);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.card{
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    /* margin-right: 5%; */
+}
+.card img{
+    /* height: 30px;
+    width: 30px; */
+    position: relative;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 50%;
+    padding: 5%;
+    margin-top: -40px;
+    margin-left: 7%;
+}
+.card h3,p{
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.card p{
+    font-size: 15px;
+}
+#left_card{
+    margin-right: 2.5%;
+    margin-top: 2%;
+    margin-bottom: 8%;
+}
+
+#middle_card{
+    margin-right: 2.5%;
+    margin-top: 6%;
+    margin-bottom: 3%;
+}
+#right_card{
+    margin-top: 10%;
+    padding-bottom: 2%;
+}
+/* The get started part */
+.boost{
+    background-color: hsl(257, 27%, 26%);
+    background-image: url(bg-boost-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-top: 310px;
+    padding: 10px 5% 40px 5%;
+}
+.boost h2{
+    color: white;
+    font-size: 2.5rem;
+}
+.boost button{
+    font-size: 18px;
+    width: 15vw;
+    height: 50px;
+}
+/* The footer part */
+footer{
+    font-size: 14px;
+    /* font-weight: 500; */
+    background-color: hsl(260, 8%, 14%);
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 5% 10%;
+}
+footer svg{
+    color: white;
+    margin-right: 10%;
+}
+footer svg:hover{
+    color: hsl(180, 66%, 49%);
+}
+footer ul{
+    margin-right: 5%;
+}
+ul h4{
+    color: white;
+    margin-top: 0%;
+}
+footer a{
+    font-weight: 500;
+}
+footer a:hover{
+    color: hsl(180, 66%, 49%);
+}
+footer li{
+    margin-bottom: 10px;
+}
+.social_links{
+    display: flex;
+
+}
+.social_links li{
+    margin-right: 25%;
+}
+
+
+
+/* when there is no link provided */
+#url1{
+    font-size: 18px;
+    width: 55vw;
+    /* height: 5vh; */
+    padding: 2% 1%;
+    border-radius: 10px;
+    border: none;
+}
+#url1::placeholder{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding-left: 20px;
+    color: hsl(0, 87%, 67%);
+}
+#url1:focus{
+    outline: none;
+    /* padding-left: 20px; */
+}
+#url1:focus::placeholder{
+    color: transparent;
+}
+
+
+/* for the appended child the shorten link */
+#top1{
+    margin-top: -75px;
+}
+
+#shorten_link_to_copy{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: -100px; */
+    margin-bottom: 1%;
+    border-radius: 10px;
+
+}
+
+#shorten_link_to_copy p {
+    color: hsl(255, 11%, 22%);
+    
+}
+
+.the_shorten_link{
+    color: hsl(180, 72%, 52%);
+    font-weight: 700;
+    font-size: 1.1250em;
+    border: none;
+}
+
+.the_shorten_link:focus{
+    outline: none;
+}
+
+.copy_button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.1250em;
+    color: white;
+    background-color: hsl(180, 66%, 49%);
+    height: 40px;
+    width: 100px;
+    margin-top: 5px;
+    /* margin-left: 2%; */
+    border-radius: 10px;
+    border: none;
+    transition: 300ms ease-in;
+}
+
+.copy_button:hover{
+    background-color: hsl(180, 100%, 60%);
+}
+
+.short_form{
+    display: flex;
+    margin-right: 2%;
+}
